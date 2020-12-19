@@ -392,6 +392,18 @@
                             </li>
                         </ul>
                     </div>
+                    <div class="follow-us">
+                        <p class="follow-us-title">Подпишитесь на рассылку</p>
+                        <form class="follow-us-form">
+                            <input type="email" name="email" placeholder="Email" required class="follow-us-input">
+                            <button type="submit" class="follow-us-button">
+                                <span class="follow-us-text">Подписаться</span>
+                                <svg class="follow-us-icon">
+                                    <use href="./images/sprite.svg#icon-send"></use>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
                 </div>
                
             </address>
@@ -406,6 +418,48 @@
                     <use href="./images/sprite.svg#icon-close"></use>
                 </svg>
             </button>
+            <div class="modal-text">
+                <p class="we-call-you">Оставьте свои данные, мы вам перезвоним</p>
+                <form class="order-service-form">
+                        <label class="order-service-label name">
+                            Имя
+                            <span class="input-wrapper">
+                                <input type="text" name="name" class="order-service-input">
+                                <svg class="field-icon">
+                                    <use href="./images/sprite.svg#icon-email"></use>
+                                </svg>
+                            </span>
+                        </label>
+                        <label class="order-service-label telephone">
+                            Телефон
+                            <span class="input-wrapper">
+                                <input type="tel" name="tel" class="order-service-input">
+                                <svg class="field-icon">
+                                    <use href="./images/sprite.svg#icon-phone"></use>
+                                </svg>
+                            </span>
+                        </label>
+                        <label class="order-service-label mail">
+                            Почта
+                            <span class="input-wrapper">
+                                <input type="email" name="email" class="order-service-input">
+                                <svg class="field-icon">
+                                    <use href="./images/sprite.svg#icon-person"></use>
+                                </svg>
+                            </span>
+                        </label>
+                        <label class="order-service-label">Комментарий<textarea name="comment" placeholder="Введите текст"
+                                class="order-service-textarea"></textarea></label>
+                    <label class="order-service-conditions">
+                        <input type="checkbox" name="conditions-confirmed"
+                            class="order-service-input visually-hidden">
+                                <span class="check-box"></span>
+                                <span class="order-service-text">Соглашаюсь с рассылкой и принимаю <a href="#" class="conditions-link">Условия
+                                        договора</a></span>
+                    </label>
+                    <button type="submit" class="order-service-button">Отправить</button>
+                </form>
+            </div>
         </div>
     </div>
     <script src="./js/modal.js"></script>
